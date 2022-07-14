@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-$u**2nccr=o!!!f_9gx=$@5c4#&3$xwv00$zw8i_o9cxwbxc*d
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'accounts',
+    'main',
+    'shop'
 ]
 
 MIDDLEWARE = [
@@ -99,6 +102,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTH_USER_MODEL = 'accounts.User'
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
@@ -115,7 +119,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
+# STATIC
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+        BASE_DIR / "arastehshop" / "staticfiles",
+]
+STATIC_ROOT = BASE_DIR / 'static'
+# MEDIA
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
