@@ -1,0 +1,12 @@
+{% extends "layout/base.html" %}
+{% load static %}
+{% block content %}
+<main>
+    <div class="content_1">
+        <div class="gray_middle_content">
+          <h1 class="about_title">{{object.title}}</h1>
+          <P class="about_info">{{object.content}}</P>
+        </div>
+    </div>
+</main>
+{% endblock %}

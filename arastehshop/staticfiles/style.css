@@ -1,0 +1,848 @@
+
+body{
+  overflow-x: hidden;
+  
+}
+
+*{  
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+
+  }
+  
+  /**navbar**/
+  nav{
+    background-color: #DAD8D8;
+    height: 100px;
+    width: 100%;
+   
+    
+  }
+  
+  .logo{
+    color: #6B705C;
+    font-size: 28px;
+    line-height: 100px;
+    padding: 0 70px;
+    font-weight: bold;
+  }
+  
+  nav ul{
+    float: right;
+    margin-right: 20px;
+    
+  }
+  
+  nav ul li{
+    display: inline;
+    line-height: 100px;
+    margin: 0 15px;
+    float: right;
+  
+  }
+
+  nav ul li a{
+    text-decoration: none;
+    color: #6B705C;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 32px;
+    
+  }
+
+ /*hover*/
+  nav ul li a:hover{
+    color: #CE4625;
+  }
+  
+  .logo:hover{
+    color: #CE4625;
+  }
+
+  .about:hover{
+    color: #CE4625;
+  }
+
+  .signin_button:hover{
+    
+    transform: scale(1.03);
+  }
+
+  .signup_button:hover{
+
+    transform: scale(1.03);
+    
+}
+  .add_to_bag_button:hover{
+     color: #CE4625;
+     transform: scale(1.03);
+   }
+  
+  .signin_text:hover{
+    color:#CE4625;
+    text-decoration: underline;
+  }
+  
+  .order_button:hover{
+    transform:scale(1.03);
+  }
+
+  .delete_button:hover{
+    color: #CE4625;
+  }
+
+  .close:hover{
+    color:#CE4625;
+  }
+
+  .cartpaybutton:hover{
+
+    transform: scale(1.02);
+  }
+  
+  /*same*/
+  img{
+    border-radius: 15px;
+  }
+
+  .content_1{
+    background-color:#faf1c4;
+    width: 100%;
+    height: 729px;
+  }
+
+  .gray_middle_content{
+    position: absolute;
+    width: 1150px;
+    height: 600px;
+    background-color: DAD8D8;
+    top: 23.5%;
+    left: 10%;
+    right: 10%;
+    border-radius: 16px;
+}
+
+.shoe_one_pic_1_container{
+  position: absolute;
+  width: 412px;
+  height: 437px;
+  background-color: #DAD8D8;
+  top: 35.5%;
+  left: 12%;
+  border-radius: 15px;
+}
+
+.shoe_one_pic_2_container{
+  position: absolute;
+  width: 412px;
+  height: 437px;
+  background-color: #DAD8D8;
+  top: 35.5%;
+  right: 12%;
+  border-radius: 15px;
+}
+
+.shoe_four_pics{
+  position: absolute;
+  width: 661px;
+  height: 565px;
+  background-color: #E8E8E8;
+  top: 25.5%;
+  left: 7.8%;
+  border-radius: 15px;
+ 
+}
+
+.shoe_info_1{
+  position: absolute;
+  width:390px;
+  height: 565px;
+  background-color: #E8E8E8;
+  top: 25.5%;
+  right: 8%;
+  border-radius: 15px;
+}
+
+.shoe_info_2{
+  position: absolute;
+  width:327px;
+  height: 188px;
+  background-color: #DAD8D8;
+  top:65%;
+  right: 10%;
+  border-radius: 10px;
+  
+}
+
+.info{
+  text-align: right;
+  font-weight: 400px;
+  font-size: 23px;
+  line-height: 40px;
+  margin: 8px 20px;
+  color: #6B705C;
+}
+
+select{
+  font-size:19px;
+  font-weight: 700px;
+  color: #6B705C;
+  background-color: #DAD8D8;
+  padding:17px 12px;
+  margin: 28px 96px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.shoe_price_del{
+  font-weight: 700px;
+  font-size: 28px;
+  color: #CE4625;
+  text-decoration: line-through;
+  text-align: center;
+}
+
+.shoe_price_now{
+  font-weight: 700px;
+  font-size: 28px;
+  color: #CE4625;
+  text-align: center;
+  padding-top: 18px;
+}
+
+.shoe_name{
+  font-weight: 700px;
+  font-size: 28px;
+  line-height: 75px;
+  color: #6B705C;
+  text-align: center;
+}
+
+.shoe_pic1{
+  margin:20px 33px;
+}
+
+.shoe_pic2{
+  margin:20px 33px;
+}
+
+.shoe_pic3{
+  margin:20px 33px;
+}
+
+.shoe_pic4{
+  margin:20px 33px;
+}
+
+.jender_title{
+  font-weight: 400px;
+  font-size: 30px;
+  color: CE4625;
+  text-align: right;
+  padding-top: 45px;
+  padding-right: 68px;
+}
+
+.shoe_name_1{
+  font-weight: 700;
+  font-size: 26px;
+  text-align: center;
+  line-height: 10px;
+  color: 6B705C;
+  }
+
+.shoe_name_2{
+font-weight: 700;
+font-size: 26px;
+text-align: center;
+line-height: 10px;
+color: 6B705C;
+}
+
+.shoe_one_pic_1
+{
+  margin: 38px 36px 30px 36px;
+}
+
+.shoe_one_pic_2
+{
+margin: 38px 36px 30px 36px;
+}
+
+.shoe_1_price{
+  font-weight: 700px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 85px;
+  color: #CE4625;
+}
+
+.shoe_2_price{
+font-weight: 700px;
+font-size: 30px;
+text-align: center;
+line-height: 85px;
+color: #CE4625;
+}
+
+.add_to_bag_button{
+  position: absolute;
+  width: 327px;
+  height: 49px;
+  top: 660px;
+  left: 990px;
+  background-color: #DAD8D8;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  color: 6B705C ; 
+  font-size: 22; 
+  font-weight: 700;
+  
+}
+
+ .sign_title{
+  color:#6B705C;
+  font-weight: bold;
+  font-size: 30px;
+  padding-top: 35px;
+  text-align: center;
+}
+
+ /*index*/
+ /*content 1*/
+  .index_content_1{
+    background-color:#faf1c4;
+    width: 100%;
+    height: 478px;
+  }
+
+  .index_title{
+    color: 6B705C;
+    font-weight: bold;
+    text-align: center;
+    line-height: 70px;
+    font-size: 23px;
+    padding-top: 5px;
+  }
+
+  .index_pics1{
+    margin: 10px 1027px 5px 149px;
+    
+  }
+  
+  .index_pics2{
+    margin: -340px 1027px 55px 595px;
+  }
+
+  .index_pics3{
+    margin: -394px 1027px 55px 1055px;
+  }
+
+  /*content 2*/
+  .content_2{
+    background-color: #A4AC86;
+    width: 100%;
+    height: 240px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding-top: 43px;
+    
+  }
+
+   /*about*/
+  .about_title {
+    color: #CE4625;
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 45px;
+    padding-right: 49px;
+    text-align:right ;
+  }
+
+  .about_info {
+    color: 6B705C;
+    font-weight: bold;
+    font-size: 26px;
+    padding-right: 48px;
+    padding-top: 35px;
+    text-align: right;
+  }
+
+
+
+  /*signin*/
+.input_email1{
+    position: absolute;
+    width: 578px;
+    height: 60px;
+    top: 20%;
+    left: 25%;
+    background-color: F0F0F0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.input_pass1{
+    position: absolute;
+    width: 578px;
+    height: 60px;
+    top: 35%;
+    left: 25%;
+    background-color: F0F0F0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+::placeholder{
+    text-align: right;
+    margin: 6px;
+    font-size: 18px;
+}
+
+.signin_button{
+    position: absolute;
+    width: 578px;
+    height: 60px;
+    top: 50%;
+    left: 25%;
+    background-color: #BBC1A4;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.signin_text{
+    color:#6B705C;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 325px 465px;
+    display: flex;
+    
+    
+ 
+}
+
+/*signup*/
+.input_name{
+  position: absolute;
+  width: 578px;
+  height: 60px;
+  top: 20%;
+  left: 25%;
+  background-color: #F0F0F0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input_email2{
+  position: absolute;
+  width: 578px;
+  height: 60px;
+  top: 35%;
+  left: 25%;
+  background-color: #F0F0F0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input_pass2{
+  position: absolute;
+  width: 578px;
+  height: 60px;
+  top: 50%;
+  left: 25%;
+  background-color: #F0F0F0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input_pass2_repeat{
+  position: absolute;
+  width: 578px;
+  height: 60px;
+  top: 65%;
+  left: 25%;
+  background-color: #F0F0F0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.signup_button{
+  position: absolute;
+  width: 578px;
+  height: 60px;
+  top: 80%;
+  left: 25%;
+  background-color: #BBC1A4;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+ .error{
+   color: #CE4625;
+   font-size: 8px;
+   height: 13px;
+ }
+
+  
+  /*footer*/
+  .footer{
+    background-color: #DAD8D8;
+    width: 100%;
+    height: 130px;
+  }
+
+  div ul li{
+    color:6B705C;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 10px 32px;
+    text-align: right;
+  }
+  
+  div ul li a{
+    color: #6B705C;
+    line-height: 45px;
+  }
+
+  /*paycart*/
+  .payment{
+    width: 550px;
+    height: 550px;
+    background-color: white;
+    position: absolute;
+    top: 80;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px 50px;
+    display: none;
+    border-radius: 15px; 
+    flex-direction: column;
+    -webkit-box-shadow: 0px 0px 27px -3px #5b5f4f; 
+    box-shadow: 0px 0px 27px -3px #5b5f4f;
+  }
+  
+
+  .paytitle{
+    font-size: 20px;
+    color: #6B705C;
+    margin: 8px;
+    right: 10px;
+    position: absolute;
+    
+  }
+
+
+  .payinput1{
+    padding: 15px;
+    margin-top: 55px ;
+  }
+
+  .payinput2{
+    padding: 15px;
+    margin-top:25px;
+  }
+
+  .payinput3{
+    padding: 15px;
+    margin-top:25px;
+  }
+
+  
+  .features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  
+  .featureimg{
+    width: 50px;
+    height: 50px;
+  }
+  
+  .feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .featuretitle{
+    font-size: 17px;
+    font-weight: 400;
+    margin: 20px;
+    line-height: 25px;
+    color: #5b5f4f;
+
+  }
+
+  .cartpaybutton{
+    position: absolute;
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background-color:#9ea58a;
+    color:white;
+    border: none;
+    cursor: pointer;
+    font-size: 23px;
+    border-radius: 15px;
+   
+  }
+
+  .close{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color:#9ea58a;
+    color: white;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 7px;
+  }
+
+  
+
+  /**/
+
+  .header{
+    color:#6B705C;
+  font-weight: bold;
+  font-size: 30px;
+  padding-top: 35px;
+  text-align: center;
+  }
+
+  #username{
+    position: absolute;
+    width: 578px;
+    height: 60px;
+    top: 20%;
+    left: 25%;
+    background-color: #F0F0F0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #email{
+    position: absolute;
+    width: 578px;
+    height: 60px;
+    top: 35%;
+    left: 25%;
+    background-color: #F0F0F0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+ #password{
+    position: absolute;
+    width: 578px;
+    height: 60px;
+    top: 50%;
+    left: 25%;
+    background-color: #F0F0F0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+ #password2{
+    position: absolute;
+    width: 578px;
+    height: 60px;
+    top: 65%;
+    left: 25%;
+    background-color: #F0F0F0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  .signup_button{
+    position: absolute;
+    width: 578px;
+    height: 60px;
+    top: 80%;
+    left: 25%;
+    background-color: #BBC1A4;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 26;
+    color: #CE4625;
+  }
+
+  .form_control input:focus{
+    outline: 0;
+    border-color: #5b5f4f;
+  }
+
+  .form_control.success input{
+    border-color: green;
+  }
+
+  .form_control.error input{
+    border-color: red;
+  }
+
+  .form_control small{
+    color: red;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+  }
+  
+  .form_control.error small{
+    visibility: visible;
+  }
+
+
+  
+/*bag*/
+.bag_table{
+  border-collapse: collapse;
+  table-layout: fixed;
+  text-align: center;
+}
+
+.bag_thead{
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.bag_td{
+  background-color: #BBC1A4;
+  color: CE4625;
+  border: none;
+  width: 1150px;
+  height: 72px;
+}
+
+.bag_shoe_name,
+.bag_shoe_size{
+  color: #6B705C;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.bag_shoe_price{
+font-size: 19px;
+font-weight: 700;
+color: #CE4625;
+}
+
+.delete_button{
+color: #6B705C;
+padding: 10px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.order_button{
+background-color: #BBC1A4;
+border: none;
+border-radius: 9px;
+cursor: pointer;
+color:#CE4625; 
+font-size: 21; 
+font-weight: 700;
+width: 80px;
+height: 60px;
+float: right;
+margin-right: 50px;
+margin-top: 110px;
+}
+
+
+/*profile*/
+
+
+.profile_title{
+  color:#6B705C;
+  font-weight: bold;
+  font-size: 30px;
+  padding-top: 35px;
+  text-align: center;
+}
+
+.profile_table{
+  border-collapse: collapse;
+  table-layout: fixed;
+  text-align: center;
+  margin-top: 60px;
+  
+}
+
+.profile_thead{
+  font-weight: 700;
+  font-size: 24px;
+  color: #CE4625;
+  border: none;
+  width: 1150px;
+  height: 72px;
+ 
+}
+
+.profile_td{
+  padding: 5px;
+  font-size: 24px;
+  color: #CE4625;
+  border: none;
+  width: 1150px;
+  height: 72px;
+}
+
+.profile_username , 
+.profile_useremail{
+  color: #6B705C;
+  font-size: 22px;
+  font-weight: 700;
+  padding-top:30px;
+}
+
+
+
+.profile_bag_link{
+  color:#6B705C;
+  font-weight: bold;
+  font-size: 23px;
+  margin-left: 500px;
+
+  
+}
+
+.profile_bag_link:hover{
+  color:#CE4625;
+  text-decoration: underline;
+}

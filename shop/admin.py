@@ -6,6 +6,10 @@ from .models import *
 class ProductCategoryAdmin(admin.ModelAdmin):
     pass
 
+@admin.register(Size)
+class SizeAdmin(admin.ModelAdmin):
+    pass
+
 class ProductGalleryInline(admin.TabularInline):
     model = ProductGallery
     fields = ['image']

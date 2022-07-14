@@ -1,0 +1,18 @@
+{% extends "layout/base.html" %}
+{% load static %}
+{% block content %}
+<!--content-->
+<main>
+    <form action="profile.html" method="post">
+        <div class="content_1">
+            <div class="gray_middle_content">
+                <h1 class="sign_title">ورود به حساب کاربری</h1>
+                <input class="input_email1" type="email"  name="email" placeholder=" ایمیل خود را وارد کنید" id="input_email1" required>
+                <input class="input_pass1" type="password"  name="pwd" placeholder=" رمز عبور خود را وارد کنید" id="input_pass1" required>
+                <button class="signin_button" type="submit"><span style="color: CE4625 ; font-size: 24; font-weight: 700;"> ورود به پروفایل کاربری </span></button>
+                <a class="signin_text" href="signup.html" >حساب ندارید؟ ثبت نام کنید</a>
+            </div>
+        </div>
+    </form>
+</main>
+{% endblock %}

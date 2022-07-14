@@ -15,6 +15,9 @@ class Page(General):
     slug = models.CharField(verbose_name="پیوند یکتا", null=True, max_length=128)
     content = models.TextField(verbose_name="متن صفحه")
     
+    def __str__(self) -> str:
+        return self.title
+    
     class Meta:
         verbose_name = 'صفحه'
         verbose_name_plural = 'صفحات'
