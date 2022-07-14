@@ -1,0 +1,38 @@
+{% extends "layout/base.html" %}
+{% load static %}
+{% block content %}
+<!--content-->
+    <main>
+    <div class="content_1">
+        <div class="shoe_four_pics">
+            <img class="shoe_pic1" src="image/Nike Air Huarache 1.jpg" alt="Nike Air Huarache">
+            <img class="shoe_pic2" src="image/Nike Air Huarache 2.jpg" alt="Nike Air Huarache">
+            <img class="shoe_pic3" src="image/Nike Air Huarache 3.jpg" alt="Nike Air Huarache">
+            <img class="shoe_pic4" src="image/Nike Air Huarache 4.jpg" alt="Nike Air Huarache">
+
+        </div>
+      
+        <div class="shoe_info_1">
+           <p class="shoe_name">Nike Air Huarache</p>
+           <p class="shoe_price_del">۶۳۰,۰۰۰ تومان</p>
+           <p class="shoe_price_now">۵۷۰,۰۰۰ تومان</p>
+    <select name="size" id="size">
+    <option value="o">سایز کفش را انتخاب کنید</option>
+    <option value="37">44</option>
+    <option value="39">42</option>
+    </select>
+       </div>
+
+       <div class="shoe_info_2">
+           <p class="info">مشخصات<br>
+            رنگ  <span style="color: #CE4625;"> : </span>مشکی<br>
+            کفی<span style="color: #CE4625;"> : </span> قابل تعویض <br>
+            نحوه بسته شدن کفش <span style="color: #CE4625;"> : </span> بندی</p>
+       </div>
+
+       <button class="add_to_bag_button" type="submit">افزودن به سبد خرید</button>
+
+    </div>
+</main>
+
+{% endblock %}

@@ -1,0 +1,73 @@
+{% extends "layout/base.html" %}
+{% load static %}
+{% block content %}
+
+ 
+          <!--content-->
+          <main>
+        <div class="content_1">
+            <div class="gray_middle_content">
+              <table class="bag_table">
+                  <thead class="bag_thead">
+                      <tr>
+                          <td class="bag_td" >تصویر محصول</td>
+                          <td class="bag_td">نام محصول</td>
+                          <td class="bag_td">سایز</td>
+                          <td class="bag_td">قیمت</td>
+                          <td class="bag_td">حذف</td>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td ><img src="./image/Nike College Pegasus.png" alt="Nike College Pegasus" width="163px" height="136px" style= "margin-top: 20px;"></td>
+                          <td class="bag_shoe_name">Nike College Pegasus</td>
+                          <td class="bag_shoe_size">۳۸</td>
+                          <td class="bag_shoe_price">۴۳۰,۰۰۰ تومان</td>
+                          <td><button class="delete_button">X</button></td>
+                      </tr>
+                      <tr>
+                        <td><img src="./image/Nike Team Hustle.png" alt="Nike Team Hustle" width="163px" height="136px" style="margin-top: 20px;"></td>
+                        <td class="bag_shoe_name" >Nike Team Hustle </td>
+                        <td class="bag_shoe_size">۲۳</td>
+                        <td class="bag_shoe_price">۳۰۰,۰۰۰ تومان</td>
+                        <td><button class="delete_button">X</button></td>
+                    </tr>
+                  </tbody>
+              </table>
+              <button class="order_button" type="submit">سفارش</button>
+            </div>
+            
+         </div>
+        </main>
+
+         <!--pay cart-->
+<div class="payment">
+    <h1 class="paytitle">اطلاعات شخصی</h1>
+    <input type="text" placeholder="نام و نام خانوادگی خود را وارد کنید" class="payinput1">
+    <input type="text" placeholder="شماره تماس خود را وارد کنید" class="payinput2">
+    <input type="text" placeholder="آدرس خود را وارد کنید" class="payinput3">
+   
+    <div class="features">
+
+    <div class="feature">
+     <img src="image/product-return.png"  class="featureimg">
+     <span class="featuretitle">هفت روز ضمانت بازگشت کالا </span>
+    </div>
+    <div class="feature">
+       <img src="image/original.png" class="featureimg">
+       <span class="featuretitle"> ضمانت اصل بودن کالا  </span>
+      </div>
+      <div class="feature">
+       <img src="image/payment-method.png" class="featureimg">
+       <span class="featuretitle">امکان پرداخت در محل </span>
+      </div>
+
+
+    </div>
+
+   <button class="cartpaybutton" onclick="takmil_sefaresh()">تایید سفارش و پرداخت</button>
+   <span class="close">X</span>
+</div>
+    
+
+{% endblock %}
