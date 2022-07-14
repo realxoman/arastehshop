@@ -12,5 +12,8 @@ class ProductView(DetailView):
     model = Product
     template_name = "shop/product.html"
     
-class ProductView(TemplateView):
+class CartView(TemplateView):
     template_name = "shop/cart.html"
+    
+class CheckoutView(TemplateView):
+    template_name = "shop/checkout.html"

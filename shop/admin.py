@@ -19,3 +19,13 @@ class ProductAdmin(admin.ModelAdmin):
     inlines = [
         ProductGalleryInline
     ]
+    
+    
+@admin.register(Cart)
+class CartAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(Checkout)
+class CheckoutAdmin(admin.ModelAdmin):
+    pass
