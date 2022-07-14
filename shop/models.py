@@ -26,7 +26,7 @@ class Size(models.Model):
         verbose_name_plural = 'سایز‌ها'
     
     def __str__(self) -> str:
-        return self.size_name
+        return str(self.size_name)
         
 class Product(General):
     title = models.CharField(verbose_name="عنوان", null=True, max_length=128)
