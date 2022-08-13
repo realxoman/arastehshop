@@ -1,9 +1,6 @@
 
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
-from django.views.generic.base import TemplateView
-from django.views.generic.detail import DetailView
-from config.settings import PAGINATE_NUMBER
 from accounts.models import User
 from .forms import *
 from django.contrib import messages
@@ -40,11 +37,11 @@ def login_view(request):
 
     return render(request, template_name, context)
 
-class UserCreateView(LoginRequiredMixin, SuccessMessageMixin, generic.CreateView):
-    template_name = 'accounts/add_user.html'
+class UserCreateView(SuccessMessageMixin, generic.CreateView):
+    template_name = 'accounts/register.html'
     model = User
     form_class = SignupForm
-    success_message = 'صفحه جدید با موفقیت ایجاد گردید.'
+    success_message = 'کاربر جدید با موفقیت ایجاد گردید.'
     success_url = reverse_lazy('accounts:panel')
     
 class Panel(LoginRequiredMixin, generic.TemplateView):

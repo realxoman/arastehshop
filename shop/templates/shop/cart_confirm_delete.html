@@ -1,0 +1,25 @@
+{% extends "layout/base.html" %}
+{% load static %}
+{% block content %}
+
+ 
+          <!--content-->
+          <main dir="rtl">
+        <div class="content_1">
+            <div class="gray_middle_content">
+              
+              <form action="" method="post">{% csrf_token %}
+                        <p class="m-4">آیا از حذف "{{ object }}" مطمئن هستید؟ </p>
+                        <button class="order_button" style="width:auto" type="submit">تایید حذف</button>
+                        <a href="../" class="order_button">نه نه اشتباه شد</a>
+                    </form>
+            </div>
+            
+         </div>
+        </main>
+
+      
+
+    
+
+{% endblock %}

@@ -5,5 +5,5 @@ app_name = 'main'
 
 urlpatterns = [
     path('', HomePage.as_view(), name="HomePage"),
-    path('pages/<str:slug>/', PageView.as_view(), name="pages")
+    path('pages/<str:slug>/', PageView.as_view(), name="pages"),
 ]
