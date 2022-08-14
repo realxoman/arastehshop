@@ -32,7 +32,7 @@ class Product(General):
     title = models.CharField(verbose_name="عنوان", null=True, max_length=128)
     slug = models.CharField(verbose_name="پیوند یکتا", null=True, max_length=128)
     content = models.TextField(verbose_name="مشخصات")
-    product_category = models.ForeignKey(ProductCategory, null=True, blank=True, on_delete=models.CASCADE)
+    product_category = models.ForeignKey(ProductCategory, null=True, blank=True,related_name="categories", on_delete=models.CASCADE)
     product_size = models.ManyToManyField(Size, blank=True)
     thumbnail = models.ImageField(verbose_name="تصویر شاخص", upload_to="product/single/", null=True)
     is_discount = models.BooleanField(verbose_name="آیا تخفیف فعال است؟", default=False)

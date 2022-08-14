@@ -6,8 +6,8 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
 # Create your views here.
 
-class ProductCategoryListView(ListView):
-    model = Product
+class ProductCategoryListView(DetailView):
+    model = ProductCategory
     template_name = "shop/category.html"
 
 class ProductView(DetailView):
