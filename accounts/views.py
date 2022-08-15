@@ -45,4 +45,4 @@ class UserCreateView(SuccessMessageMixin, generic.CreateView):
     success_url = reverse_lazy('accounts:panel')
     
 class Panel(LoginRequiredMixin, generic.TemplateView):
-    pass
+    template_name = 'accounts/panel.html'

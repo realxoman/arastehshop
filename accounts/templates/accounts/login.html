@@ -3,12 +3,14 @@
 {% block content %}
 <!--content-->
 <main>
-    <form action="profile.html" method="post">
+    <form action="" method="post">
+    {% csrf_token %}
         <div class="content_1">
             <div class="gray_middle_content">
                 <h1 class="sign_title">ورود به حساب کاربری</h1>
-                <input class="input_email1" type="email"  name="email" placeholder=" نام کاربری خود را وارد کنید" id="input_email1" required>
-                <input class="input_pass1" type="password"  name="pwd" placeholder=" رمز عبور خود را وارد کنید" id="input_pass1" required>
+                {{form.errors}}
+                <input class="input_email1" type="text"  name="username" placeholder=" نام کاربری خود را وارد کنید" id="input_email1" required>
+                <input class="input_pass1" type="password"  name="password" placeholder=" رمز عبور خود را وارد کنید" id="input_pass1" required>
                 <button class="signin_button" type="submit"><span style="color: CE4625 ; font-size: 24; font-weight: 700;"> ورود به پروفایل کاربری </span></button>
                 <a class="signin_text" href="{% url 'accounts:register' %}" >حساب ندارید؟ ثبت نام کنید</a>
             </div>

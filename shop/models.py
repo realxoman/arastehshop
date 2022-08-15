@@ -52,7 +52,7 @@ class Product(General):
         return self.price
         
 class ProductGallery(General):
-    product = models.ForeignKey(Product,blank=True, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product,blank=True, on_delete=models.CASCADE, related_name="image_gallery")
     image = models.ImageField(verbose_name="تصویر شاخص", upload_to="product/gallery/", null=True)
     
     def __str__(self) -> str:

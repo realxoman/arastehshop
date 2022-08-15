@@ -7,19 +7,19 @@
             <h1 class="profile_title">اطلاعات حساب کاربری شما</h1>
             <table class="profile_table">
             <tr>
-                <td class="profile_td">User</td>
+                <td class="profile_td">{{request.user.username}}</td>
                 <th class="profile_thead"> : نام کاربری </th>
                 
                 </tr>
                 <tr>
                 
-                <td  class="profile_td">user@gmail.com</td>
+                <td  class="profile_td">{{request.user.email}}</td>
                 <th  class="profile_thead"> : ایمیل</th>
                 </tr>
                 
             </table>
             
-            <a href="bag.html" class="profile_bag_link"> مشاهده سبد خرید</a>
+            <a href="/shop/cart/" class="profile_bag_link"> مشاهده سبد خرید</a>
 
         
         </div>

@@ -2,15 +2,25 @@
 {% load static %}
 {% block content %}
 <!--content-->
+<style>
+.shoe_one_pic{
+    margin: 30px auto;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+}
+</style>
     <main>
     <div class="content_1">
         <h1 class="jender_title"> {{object.name}} </h1>
         </div>
         {% for obj in object.categories.all %}
         <div class="shoe_one_pic_{{forloop.counter}}_container"> 
-          <a href="mshoe1.html" > <img class="shoe_one_pic_{{forloop.counter}}" src="image/Nike Air Huarache.png" alt="Nike Air Huarache"></a>
-            <a href="mshoe1.html"><p class="shoe_name_{{forloop.counter}}">Nike Air Huarache</p></a>
-            <p class="shoe_1_price">۵۷۰,۰۰۰ تومان</p> 
+          <a href="/shop/product/{{obj.slug}}" > <img class="shoe_one_pic" src="{{obj.thumbnail.url}}" alt="Nike Air Huarache"></a>
+            <a href="/shop/product/{{obj.slug}}"><p class="shoe_name_{{forloop.counter}}">Nike Air Huarache</p></a>
+            <p class="shoe_{{forloop.counter}}_price">{{obj.get_final_price}}</p> 
         </div>
         {% endfor %}
        
