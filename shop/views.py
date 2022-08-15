@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import *
 from accounts.models import *
 from django.views.generic import View,ListView,DetailView,CreateView,TemplateView,DeleteView
@@ -31,7 +31,18 @@ class CartView(LoginRequiredMixin, ListView):
         self.user = request.user
 
         return super().dispatch(request, *args, **kwargs)
-    
+
+def cart_add_view(request):
+    size = request.POST.get("size")
+    product_id = request.POST.get("product_id")
+    pro= Product.objects.get(id=product_id)
+    print(request.user)
+    myuser=request.user
+    mysize= Size.objects.get(size_name=size)
+    add_to_cart = Cart(product=pro,user=myuser,size=mysize).save()
+    return redirect('shop:cart')
+            
+        
 class DeleteCart(LoginRequiredMixin,DeleteView):
     model=Cart
     success_url = reverse_lazy('main:HomePage')

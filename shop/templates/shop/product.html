@@ -35,7 +35,9 @@ align-items: center;
 }
 </style>
     <main>
+<form action="/shop/cart_add" method="POST">
     <div class="content_1">
+        
         <div class="shoe_four_pics">
         {% for obj in object.image_gallery.all %}
             <img class="shoe_pic{{forloop.counter}}" src="{{obj.image.url}}" alt="{{object.title}}">
@@ -50,8 +52,8 @@ align-items: center;
            {% else %}
            <p class="shoe_price_now">{{object.price}}</p>
            {% endif %}
-    <select name="size" id="size">
-    <option value="o">سایز کفش را انتخاب کنید</option>
+    <select name="size" id="size" required>
+    <option disabled="disabled">سایز کفش را انتخاب کنید</option>
     {% for size in object.product_size.all %}
     <option value="{{size.size_name}}">{{size.size_name}}</option>
     {% endfor %}
@@ -63,10 +65,14 @@ align-items: center;
             {{object.content}}
        </div>
 
+        
+        {% csrf_token %}
+        <input type="hidden" name="product_id" value="{{object.id}}">
        <button class="add_to_bag_button" type="submit">افزودن به سبد خرید</button>
+      
 </div>
     </div>
-
+ </form>
 </main>
 
 {% endblock %}
