@@ -49,4 +49,6 @@ class DeleteCart(LoginRequiredMixin,DeleteView):
     
     
 class CheckoutView(TemplateView):
-    template_name = "shop/checkout.html"
+    template_name = "shop/final.html"
+
+    
